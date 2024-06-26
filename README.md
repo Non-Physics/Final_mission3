@@ -5,12 +5,12 @@
 ## 环境配置
 在开始训练和测试之前，请确保你的环境中安装了以下依赖：
 
--Python 3.x
--TensorFlow 2.x
--Keras
--NumPy
--Matplotlib
--ImageIO
+    Python 3.x
+    TensorFlow 2.x
+    Keras
+    NumPy
+    Matplotlib
+    ImageIO
 
 ## 数据准备
 请将你的多视角图像数据和相机参数文件放在指定的目录下。确保图像文件和相机参数文件（如 transforms.json）在相同的目录中。
@@ -19,17 +19,17 @@
 使用以下命令运行训练脚本：
 
 ### 设置环境变量
-import os
-os.environ["KERAS_BACKEND"] = "tensorflow"
+    import os
+    os.environ["KERAS_BACKEND"] = "tensorflow"
 
 ### 导入必要的库
-import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras import layers
-import numpy as np
-import matplotlib.pyplot as plt
-import imageio
-import json
+    import tensorflow as tf
+    from tensorflow import keras
+    from tensorflow.keras import layers
+    import numpy as np
+    import matplotlib.pyplot as plt
+    import imageio
+    import json
 
 ### 设定随机种子以确保结果可重复
 tf.random.set_seed(42)
